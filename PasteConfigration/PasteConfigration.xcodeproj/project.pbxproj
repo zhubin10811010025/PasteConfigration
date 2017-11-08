@@ -15,6 +15,7 @@
 		5CA3EC6D1FB29D100093C38E /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC6C1FB29D100093C38E /* TableViewCellModel.m */; };
 		5CA3EC701FB2A0B60093C38E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC6F1FB2A0B60093C38E /* TableViewCell.m */; };
 		5CA3EC751FB2A3320093C38E /* PasteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC741FB2A3320093C38E /* PasteViewController.m */; };
+		5CA3EC791FB2AA8B0093C38E /* MenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC781FB2AA8B0093C38E /* MenuManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		5CA3EC6F1FB2A0B60093C38E /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		5CA3EC731FB2A3320093C38E /* PasteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteViewController.h; sourceTree = "<group>"; };
 		5CA3EC741FB2A3320093C38E /* PasteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteViewController.m; sourceTree = "<group>"; };
+		5CA3EC771FB2AA8B0093C38E /* MenuManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuManager.h; sourceTree = "<group>"; };
+		5CA3EC781FB2AA8B0093C38E /* MenuManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuManager.m; sourceTree = "<group>"; };
+		5CA3EC7A1FB2B1660093C38E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		5CA3EC4D1FB2976E0093C38E /* PasteConfigration */ = {
 			isa = PBXGroup;
 			children = (
+				5CA3EC761FB2AA780093C38E /* MenuManager */,
 				5CA3EC711FB2A3180093C38E /* PasteViewController */,
 				5CA3EC641FB29C8B0093C38E /* tableController */,
 				5CA3EC4E1FB2976E0093C38E /* AppDelegate.h */,
@@ -73,6 +78,7 @@
 				5CA3EC591FB2976E0093C38E /* LaunchScreen.storyboard */,
 				5CA3EC5C1FB2976E0093C38E /* Info.plist */,
 				5CA3EC5D1FB2976E0093C38E /* main.m */,
+				5CA3EC7A1FB2B1660093C38E /* PrefixHeader.pch */,
 			);
 			path = PasteConfigration;
 			sourceTree = "<group>";
@@ -129,6 +135,15 @@
 				5CA3EC741FB2A3320093C38E /* PasteViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5CA3EC761FB2AA780093C38E /* MenuManager */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC771FB2AA8B0093C38E /* MenuManager.h */,
+				5CA3EC781FB2AA8B0093C38E /* MenuManager.m */,
+			);
+			path = MenuManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +221,7 @@
 				5CA3EC5E1FB2976E0093C38E /* main.m in Sources */,
 				5CA3EC501FB2976E0093C38E /* AppDelegate.m in Sources */,
 				5CA3EC751FB2A3320093C38E /* PasteViewController.m in Sources */,
+				5CA3EC791FB2AA8B0093C38E /* MenuManager.m in Sources */,
 				5CA3EC6A1FB29CC90093C38E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHDAT76EXR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PasteConfigration/PrefixHeader.pch";
 				INFOPLIST_FILE = PasteConfigration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhubin.PasteConfigration;
@@ -348,6 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHDAT76EXR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PasteConfigration/PrefixHeader.pch";
 				INFOPLIST_FILE = PasteConfigration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhubin.PasteConfigration;

@@ -10,10 +10,12 @@
 #import "TableViewCellModel.h"
 #import "TableViewCell.h"
 #import "PasteViewController.h"
+#import "MenuManager.h"
 
 @interface TableViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *dataSource;
+@property (nonatomic,strong) MenuManager *menuManager;
 @end
 
 @implementation TableViewController
@@ -28,11 +30,21 @@
     return _tableView;
 }
 
+-(MenuManager *)menuManager {
+    if (!_menuManager) {
+        _menuManager = [[MenuManager alloc]initWithView:self.view];
+    }
+    return _menuManager;
+}
+
 #pragma mark 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
+    
+    [self.view addGestureRecognizer:self.menuManager.longPressGestureRecognizer];
+    [self.view addGestureRecognizer:self.menuManager.tapGestureRecognizer];
     
     
     TableViewCellModel *model1 = [[TableViewCellModel alloc]initWithTitleString:@"Name1"];

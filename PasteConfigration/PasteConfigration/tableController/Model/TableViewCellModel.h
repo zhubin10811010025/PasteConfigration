@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TableViewCellModel : NSObject
+@interface TableViewCellModel : NSObject<NSCoding,NSItemProviderReading>
 @property (nonatomic,copy) NSString *titleString;
 - (instancetype)initWithTitleString:(NSString *)titleString;
 @end

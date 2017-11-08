@@ -15,4 +15,28 @@
     }
     return self;
 }
+
+-(void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.titleString forKey:@"titleString"];
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        self.titleString = [aDecoder decodeObjectForKey:@"titleString"];
+    }
+    return self;
+}
+
++ (instancetype)objectWithItemProviderData:(NSData *)data typeIdentifier:(NSString *)typeIdentifier error:(NSError * _Nullable __autoreleasing *)outError {
+    if ([typeIdentifier isEqualToString:CELL_TYPE]) {
+        TableViewCellModel *model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        return [[self alloc]initWithTitleString:model.titleString];
+    }
+    return nil;
+}
+
++(NSArray<NSString *> *)readableTypeIdentifiersForItemProvider {
+    return @[CELL_TYPE];
+}
+
 @end
