@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewCell.h
 //  PasteConfigration
 //
 //  Created by 花田半亩 on 2017/11/8.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableViewCellModel.h"
 
-@interface ViewController : UIViewController
-
-
+@interface TableViewCell : UITableViewCell
+@property (nonatomic,strong) TableViewCellModel *model;
 @end
-

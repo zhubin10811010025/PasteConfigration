@@ -8,24 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		5CA3EC501FB2976E0093C38E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC4F1FB2976E0093C38E /* AppDelegate.m */; };
-		5CA3EC531FB2976E0093C38E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC521FB2976E0093C38E /* ViewController.m */; };
-		5CA3EC561FB2976E0093C38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA3EC541FB2976E0093C38E /* Main.storyboard */; };
 		5CA3EC581FB2976E0093C38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA3EC571FB2976E0093C38E /* Assets.xcassets */; };
 		5CA3EC5B1FB2976E0093C38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA3EC591FB2976E0093C38E /* LaunchScreen.storyboard */; };
 		5CA3EC5E1FB2976E0093C38E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC5D1FB2976E0093C38E /* main.m */; };
+		5CA3EC6A1FB29CC90093C38E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC691FB29CC90093C38E /* TableViewController.m */; };
+		5CA3EC6D1FB29D100093C38E /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC6C1FB29D100093C38E /* TableViewCellModel.m */; };
+		5CA3EC701FB2A0B60093C38E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC6F1FB2A0B60093C38E /* TableViewCell.m */; };
+		5CA3EC751FB2A3320093C38E /* PasteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3EC741FB2A3320093C38E /* PasteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5CA3EC4B1FB2976E0093C38E /* PasteConfigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteConfigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA3EC4E1FB2976E0093C38E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CA3EC4F1FB2976E0093C38E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CA3EC511FB2976E0093C38E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CA3EC521FB2976E0093C38E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5CA3EC551FB2976E0093C38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CA3EC571FB2976E0093C38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA3EC5A1FB2976E0093C38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CA3EC5C1FB2976E0093C38E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA3EC5D1FB2976E0093C38E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CA3EC681FB29CC90093C38E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5CA3EC691FB29CC90093C38E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5CA3EC6B1FB29D100093C38E /* TableViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellModel.h; sourceTree = "<group>"; };
+		5CA3EC6C1FB29D100093C38E /* TableViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellModel.m; sourceTree = "<group>"; };
+		5CA3EC6E1FB2A0B60093C38E /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		5CA3EC6F1FB2A0B60093C38E /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5CA3EC731FB2A3320093C38E /* PasteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteViewController.h; sourceTree = "<group>"; };
+		5CA3EC741FB2A3320093C38E /* PasteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +65,70 @@
 		5CA3EC4D1FB2976E0093C38E /* PasteConfigration */ = {
 			isa = PBXGroup;
 			children = (
+				5CA3EC711FB2A3180093C38E /* PasteViewController */,
+				5CA3EC641FB29C8B0093C38E /* tableController */,
 				5CA3EC4E1FB2976E0093C38E /* AppDelegate.h */,
 				5CA3EC4F1FB2976E0093C38E /* AppDelegate.m */,
-				5CA3EC511FB2976E0093C38E /* ViewController.h */,
-				5CA3EC521FB2976E0093C38E /* ViewController.m */,
-				5CA3EC541FB2976E0093C38E /* Main.storyboard */,
 				5CA3EC571FB2976E0093C38E /* Assets.xcassets */,
 				5CA3EC591FB2976E0093C38E /* LaunchScreen.storyboard */,
 				5CA3EC5C1FB2976E0093C38E /* Info.plist */,
 				5CA3EC5D1FB2976E0093C38E /* main.m */,
 			);
 			path = PasteConfigration;
+			sourceTree = "<group>";
+		};
+		5CA3EC641FB29C8B0093C38E /* tableController */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC671FB29C9F0093C38E /* Model */,
+				5CA3EC661FB29C9A0093C38E /* View */,
+				5CA3EC651FB29C930093C38E /* Controller */,
+			);
+			path = tableController;
+			sourceTree = "<group>";
+		};
+		5CA3EC651FB29C930093C38E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC681FB29CC90093C38E /* TableViewController.h */,
+				5CA3EC691FB29CC90093C38E /* TableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5CA3EC661FB29C9A0093C38E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC6E1FB2A0B60093C38E /* TableViewCell.h */,
+				5CA3EC6F1FB2A0B60093C38E /* TableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CA3EC671FB29C9F0093C38E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC6B1FB29D100093C38E /* TableViewCellModel.h */,
+				5CA3EC6C1FB29D100093C38E /* TableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CA3EC711FB2A3180093C38E /* PasteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC721FB2A31E0093C38E /* Controller */,
+			);
+			path = PasteViewController;
+			sourceTree = "<group>";
+		};
+		5CA3EC721FB2A31E0093C38E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CA3EC731FB2A3320093C38E /* PasteViewController.h */,
+				5CA3EC741FB2A3320093C38E /* PasteViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +191,6 @@
 			files = (
 				5CA3EC5B1FB2976E0093C38E /* LaunchScreen.storyboard in Resources */,
 				5CA3EC581FB2976E0093C38E /* Assets.xcassets in Resources */,
-				5CA3EC561FB2976E0093C38E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +201,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CA3EC531FB2976E0093C38E /* ViewController.m in Sources */,
+				5CA3EC701FB2A0B60093C38E /* TableViewCell.m in Sources */,
+				5CA3EC6D1FB29D100093C38E /* TableViewCellModel.m in Sources */,
 				5CA3EC5E1FB2976E0093C38E /* main.m in Sources */,
 				5CA3EC501FB2976E0093C38E /* AppDelegate.m in Sources */,
+				5CA3EC751FB2A3320093C38E /* PasteViewController.m in Sources */,
+				5CA3EC6A1FB29CC90093C38E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5CA3EC541FB2976E0093C38E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CA3EC551FB2976E0093C38E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5CA3EC591FB2976E0093C38E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
